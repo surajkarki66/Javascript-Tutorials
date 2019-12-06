@@ -1,0 +1,35 @@
+<html>
+
+<body>
+
+<button id = "hello">Magic</button>
+
+<p id="name"></p>
+
+<script>
+
+    var x = document.getElementById("hello");
+    x.addEventListener("mouseover",func1);
+    x.addEventListener("mouseenter",func2);
+
+
+    function func1()
+    {
+        document.getElementById("name").innerHTML += "Welcome<br>";
+    }
+
+    function func2() {
+        document.getElementById("name").innerHTML += "Bye";
+        
+    }
+
+
+
+</script>
+
+
+</body>
+
+
+
+</html>
