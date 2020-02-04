@@ -19,3 +19,32 @@ user.then(data => console.log(data));
 console.log("Finished");
 
 
+const posts = [
+    { title: 'First Post', body: 'This is my first post'},
+    { title: 'Second Post', body: 'This is my second post'}
+]
+
+function getPosts() {
+    setTimeout(() => {
+        let output = '';
+        posts.forEach((post, index) => {
+            output += post.title;
+        })
+        console.log(output);
+    }, 1000);
+}
+
+function createPost(post) {
+    setTimeout(() => {
+        posts.push(post);
+    }, 1000);
+}
+
+async function init() {
+    await createPost({title: 'Hello', body: 'Im good'});
+
+    getPosts();
+    
+}
+
+
