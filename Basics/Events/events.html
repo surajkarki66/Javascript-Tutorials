@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+	<h1 id="test">Hello</h1>
+	<h2 onclick="this.innerHTML = 'This is h2 tag'">Click on h2</h2>
+	<h3 onclick="this.innerHTML = 'This is h3 tag'">Click on h3</h3> <!-- onclick is event handler !-->
+
+	<button type="button">
+		<h1 onclick="changeText(this)">Click on h1</h1>
+	</button>
+
+
+
+	<script>
+		// Assign events using html doms
+
+		function changeText(id) {
+			//console.log(id)
+			id.innerHTML = "Hello";
+		}
+
+	</script>
+
+</body>
+
+</html

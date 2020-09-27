@@ -1,0 +1,39 @@
+<html>
+
+<body>
+
+	<h1 id="id01">Hello World</h1>
+	<p id="id02"></p>
+
+	<h2 id="i1">Fuck You</h2>
+	<q id="i2">Hhhh</h2>
+
+
+		<div id="d1">
+
+			<p id="p1"></p>
+			<p id="p2"></p>
+
+		</div>
+
+		<script>
+			document.getElementById("id02").innerHTML = document.getElementById("id01")
+				.innerHTML; // Assigning one node text to other
+
+			document.getElementById("i2").innerHTML = document.getElementById("i1").innerHTML;
+
+			//Creating new html elements
+
+			var para = document.createElement("p")
+			var node = document.createTextNode("This is new.");
+
+			para.appendChild(node);
+
+			var element = document.getElementById("d1");
+			element.appendChild(para);
+
+		</script>
+
+</body>
+
+</html>
