@@ -10,6 +10,7 @@ const posts = [
 ];
 
 function getPosts() {
+  console.log("Getting post.");
   setTimeout(() => {
     let output = "";
     posts.forEach((post, index) => {
@@ -17,13 +18,17 @@ function getPosts() {
     });
     document.body.innerHTML = output;
   }, 1000);
+  console.log("Hold 1 second");
 }
 
 function createPost(post, callback) {
+  console.log("Creating Post");
   setTimeout(() => {
     posts.push(post);
+    console.log("Callback function called");
     callback();
   }, 2000);
+  console.log("Hold 2 seconds.");
 }
 
 //getPosts();
