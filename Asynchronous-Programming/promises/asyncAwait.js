@@ -35,14 +35,26 @@ function createPost(post) {
   });
 }
 
-createPost({
-  title: "Third Post",
-  body: "Third post",
-})
-  .then((getPosts) => {
-    console.log(getPosts);
-    console.log("Post fetched !");
-  })
-  .catch((err) => console.log(err));
+async function init() {
+  console.log("Starting init function !");
+  try {
+    console.log("Awaiting start !");
+    const posts = await createPost({
+      title: "Third Post",
+      body: "Third post",
+    });
+    // waiting to complete the above  function execution.
+    console.log("awaiting finished !");
+    if (posts) {
+      console.log(posts);
+      console.log("posts fetched !");
+    }
+    console.log("Showing post in dom");
+    getPosts();
+  } catch (e) {
+    console.log(e);
+  }
+}
 
+init();
 console.log("Finished !");
