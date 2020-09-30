@@ -2,5 +2,6 @@
     "cSpell.words": [
         "ayncawait",
         "techlead"
-    ]
+    ],
+    "editor.codeActionsOnSave": true
 }
