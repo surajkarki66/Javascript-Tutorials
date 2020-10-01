@@ -1,0 +1,15 @@
+{
+  "name": "best-practices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "consume-promise.js",
+  "scripts": {
+    "start": "node sugar.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
