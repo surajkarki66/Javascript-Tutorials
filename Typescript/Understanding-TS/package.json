@@ -1,0 +1,15 @@
+{
+	"name": "Understanding-TS",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"scripts": {
+		"start": "lite-server"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"lite-server": "^2.5.4"
+	}
+}
