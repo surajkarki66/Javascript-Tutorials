@@ -31,7 +31,6 @@ const person = {
   name: "Dev Ed",
   age: 40,
 };
-
 console.log(person);
 
 // array
@@ -42,9 +41,7 @@ const student = {
 };
 
 let favoriteActivities: string[];
-
 favoriteActivities = ["Music", "Coding"];
-
 for (const hobby of student.hobbies) {
   console.log(hobby);
   console.log(hobby.toUpperCase());
@@ -58,10 +55,8 @@ const user: {
   name: "binod",
   role: [2, "author"],
 };
-
 user.role.push("admin");
 //user.role[1] = 10;
-
 console.log(user);
 
 // enum => assigns labels to the number.
