@@ -1,5 +1,5 @@
 // Core data types
-// number, string, boolean, object, array, tuple(fic length array), enum
+// number, string, boolean, object, array, tuple(fix length array), enum
 
 // The key difference is javascript uses "dynamic types"(resolved at runtime), Typescript uses "static types"(set during dev)
 // Typescript has a built in functionality type inference
